@@ -16,7 +16,7 @@ public class GameEnd : MonoBehaviour
     {
         audioSource.PlayOneShot(sound1);
         //ここに遷移させるシーン名
-        Invoke("Quit", 0.8f);
+        Invoke("Quit", 1.0f);
     }
     void Quit()
     {
