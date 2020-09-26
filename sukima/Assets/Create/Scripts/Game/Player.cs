@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
             Bullet blt = Instantiate(m_Bullet);
             blt.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             m_FireCD = m_FireRate;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
     }
 }
