@@ -18,6 +18,12 @@ public class Bullet : MonoBehaviour
                 Goal a = hit.collider.gameObject.GetComponent<Goal>();
                 StartCoroutine(Goal(a));
             }
+            else
+            {
+                AudioSource audioSource = GetComponent<AudioSource>();
+                audioSource.pitch = Random.Range(0.9f, 1.1f);
+                audioSource.PlayOneShot(audioSource.clip);
+            }
         }
     }
 
