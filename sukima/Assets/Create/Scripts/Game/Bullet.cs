@@ -14,11 +14,13 @@ public class Bullet : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.DrawRay(transform.position, hit.point, Color.green, 1.0f);
+            Debug.DrawRay(transform.position, hit.point, Color.green, 0.1f);
 
             if (hit.collider.gameObject.GetComponent<Goal>())
             {
                 Goal a = hit.collider.gameObject.GetComponent<Goal>();
+                Time.timeScale = 1;
+                Destroy(this.gameObject);
                 a.SceneChange();
             }
         }
@@ -37,5 +39,5 @@ public class Bullet : MonoBehaviour
             Time.timeScale = 1;
             Destroy(this.gameObject);
         }
-    } 
+    }
 }
