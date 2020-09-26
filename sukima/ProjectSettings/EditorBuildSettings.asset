@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Create/Scenes/Release/Game_03.unity
     guid: a8417ec2725f5da458da06b05bee4d5e
   - enabled: 1
+    path: Assets/Create/Scenes/Release/Game_04.unity
+    guid: 12c2d235c4da9d247b4f7e05af6fa12a
+  - enabled: 1
+    path: Assets/Create/Scenes/Release/Game_05.unity
+    guid: e4500b09b424b99468fbf4ee14bfd39f
+  - enabled: 1
+    path: Assets/Create/Scenes/Release/Game_06.unity
+    guid: d754915286fb39642913af99a564ba27
+  - enabled: 1
     path: Assets/Create/Scenes/Release/Result_Scene.unity
     guid: a3c3b72d7c4757e4cb72dcf1814e16c6
   m_configObjects: {}
