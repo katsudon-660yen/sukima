@@ -29,7 +29,6 @@ public class WallScript : MonoBehaviour
         time = 0.0f;
 
         basePosition = gameObject.GetComponent<Transform>().position;
-        Debug.Log(basePosition);
     }
 
     // Update is called once per frame

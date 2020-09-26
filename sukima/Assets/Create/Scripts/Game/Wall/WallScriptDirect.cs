@@ -47,4 +47,19 @@ public class WallScriptDirect : MonoBehaviour
             isUp = false;
         }
     }
+
+    public void SetLimitTop(float limit)
+    {
+        limitTop = limit;
+    }
+
+    public void SetLimitBottom(float limit)
+    {
+        limitBottom = limit;
+    }
+
+    public void SetSpeed(float speed)
+    {
+        moveSpeed = speed;
+    }
 }
