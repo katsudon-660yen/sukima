@@ -10,6 +10,10 @@ public class Goal : MonoBehaviour
 
     public void SceneChange()
     {
+        if(_nextSceneName == "Result_Scene")
+        {
+            Destroy(GameObject.Find("GameBGM"));
+        }
         SceneManager.LoadScene(_nextSceneName);
     }
 }

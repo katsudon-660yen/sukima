@@ -12,9 +12,12 @@ public class Player : MonoBehaviour
     private float m_FireRate = 0.5f;
     private float m_FireCD;
 
+    AudioSource _audioSource;
+
     void Start()
     {
         m_FireCD = 0;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
         {
             Bullet blt = Instantiate(m_Bullet);
             blt.gameObject.transform.position = transform.position;
+            _audioSource.PlayOneShot(_audioSource.clip);
             m_FireCD = m_FireRate;
             //Time.timeScale = 0;
         }
