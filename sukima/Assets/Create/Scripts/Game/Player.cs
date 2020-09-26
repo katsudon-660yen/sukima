@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         {
             m_FireCD -= Time.deltaTime;
         }
-        if(Input.GetKeyDown(KeyCode.Space) && m_FireCD == 0)
+        if(Input.GetKeyDown(KeyCode.Space) && m_FireCD <= 0)
         {
             Bullet blt = Instantiate(m_Bullet);
             blt.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
