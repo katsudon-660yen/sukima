@@ -15,9 +15,9 @@ public class RotateBlock : MonoBehaviour
     void Start()
     {
         // ブロック配置
-        _blocks[0].transform.position = new Vector3(-_range, _range, 0.0f);
-        _blocks[1].transform.position = new Vector3(_range, _range, 0.0f);
-        _blocks[2].transform.position = new Vector3(-_range, -_range, 0.0f);
-        _blocks[3].transform.position = new Vector3(_range, -_range, 0.0f);
+        _blocks[0].transform.localPosition = new Vector3(-_range, _range, 0.0f);
+        _blocks[1].transform.localPosition = new Vector3(_range, _range, 0.0f);
+        _blocks[2].transform.localPosition = new Vector3(-_range, -_range, 0.0f);
+        _blocks[3].transform.localPosition = new Vector3(_range, -_range, 0.0f);
     }
 }
