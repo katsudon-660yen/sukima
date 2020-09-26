@@ -17,7 +17,7 @@ public class GameTitle : MonoBehaviour
     {
         audioSource.PlayOneShot(sound1);
         //ここに遷移させるシーン名
-        Invoke("Call", 0.5f);
+        Invoke("Call", 1.0f);
     }
 
     public void Call()
