@@ -16,9 +16,10 @@ public class Bullet : MonoBehaviour
         {
             Debug.DrawRay(transform.position, hit.point, Color.green, 1.0f);
 
-            if (hit.collider.gameObject.GetComponent<BoxCollider2D>())
+            if (hit.collider.gameObject.GetComponent<Goal>())
             {
-
+                Goal a = hit.collider.gameObject.GetComponent<Goal>();
+                a.SceneChange();
             }
         }
     }
